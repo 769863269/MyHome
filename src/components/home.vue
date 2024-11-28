@@ -1,4 +1,16 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const typedStrings = ref([
+  "你好鸭，欢迎来到我的主页！",
+  "长风破浪会有时，直挂云帆济沧海",
+  "沉舟侧畔千帆过，病树前头万木春",
+  "纸上得来终觉浅，绝知此事要躬行",
+  "时人不识凌云木，直待凌云始道高",
+  "欲穷千里目，更上一层楼",
+  "大鹏一日同风起，扶摇直上九万里",
+]);
+</script>
 
 <template>
   <!-- 左侧图片 -->
@@ -26,23 +38,74 @@
       <!-- 个人名称 -->
       <div class="infoText">
         <h1>Hi</h1>
-        <h1>I'm <span class="nameText">KongDong</span></h1>
+        <h1>I'm <span class="nameText">空洞</span></h1>
       </div>
+    </div>
+
+    <div class="typeText">
+      <VueTyped
+        :strings="typedStrings"
+        :typeSpeed="50"
+        :backSpeed="30"
+        :loop="true"
+      />
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@media (max-width: 1100px) {
+@media screen and (max-width: 762px) {
   .bgBox {
-    display: none;
+    width: 60% !important;
+    right: 62vw !important;
+  }
+
+  .bgGrid {
+    .Grid {
+      .itemGrid-row {
+        .itemGrid-cols {
+          width: 60px !important;
+          height: 60px !important;
+        }
+      }
+
+      .mask {
+        height: 110% !important;
+      }
+    }
+  }
+
+  .main {
+    background-size: cover !important;
+    background-position: -20em !important;
+
+    .info {
+      flex-direction: column;
+      align-items: center;
+
+      .infoText {
+        align-items: center !important;
+        font-size: 1em !important;
+        margin: 0 !important;
+      }
+
+      .header {
+        margin: 0 0 1em 0;
+      }
+    }
+
+    .typeText {
+      margin: 20px !important;
+    }
   }
 }
 
 .bgBox {
+  width: 450px;
+  z-index: 1;
   position: fixed;
   bottom: 0;
-  width: 400px;
+  left: -50px;
   img {
     width: 100%;
     height: auto;
@@ -85,6 +148,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   .info {
     display: flex;
@@ -95,7 +159,7 @@
       justify-content: center;
       align-items: start;
       flex-direction: column;
-      margin-left: 20px;
+      margin-left: 30px;
 
       .nameText {
         position: relative;
@@ -133,6 +197,16 @@
         object-fit: cover;
       }
     }
+  }
+
+  .typeText {
+    font-size: 24px;
+    margin: 50px;
+
+    z-index: 1;
+    display: flex;
+    height: 50px;
+    text-align: center;
   }
 }
 </style>

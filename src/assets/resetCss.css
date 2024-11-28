@@ -1,4 +1,20 @@
+@import url("https://fonts.font.im/css?family=Sunflower:300,500");
+
+:root {
+  --mainColor: #000;
+  --bgColor: #fff;
+  --dialogBgColor: #fff;
+  --dialogColor: #2c3e50;
+  --reTheme: 30px;
+  --loadBg: #ffffff radial-gradient(circle at center, #f0f0f0 0%, #ffffff 80%)
+    no-repeat;
+  --loadText: #2b2b2b;
+}
+
 * {
   margin: 0;
   padding: 0;
+
+  font-family: "Sunflower", "微软雅黑", sans-serif;
+  font-weight: 300;
 }
