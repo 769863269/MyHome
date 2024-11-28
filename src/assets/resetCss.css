@@ -1,3 +1,16 @@
+/* 引入icon图标样式 */
+@import url("./font-awesome-4.7.0/css/font-awesome.min.css");
+/* 引入字体样式 谷歌字体 'Orbitron'  */
+@font-face {
+  font-family: "Orbitron";
+  src: url("./font/Orbitron.ttf") format("truetype");
+}
+/* 引入字体样式 阿里爸爸健康2.0 'AlibabaHealthFont2'  */
+@font-face {
+  font-family: "AlibabaHealthFont";
+  src: url("./font/AlibabaHealthFont2.0CN-45R.ttf") format("truetype");
+}
+/* 引入网络字体可以直接调用 */
 @import url("https://fonts.font.im/css?family=Sunflower:300,500");
 
 :root {
@@ -15,6 +28,5 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Sunflower", "微软雅黑", sans-serif;
-  font-weight: 300;
+  font-family: "Orbitron", "AlibabaHealthFont", "Sunflower", sans-serif;
 }

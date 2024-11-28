@@ -1,4 +1,5 @@
 <script setup>
+import accordion from "./accordion.vue";
 import { ref } from "vue";
 
 const typedStrings = ref([
@@ -50,6 +51,10 @@ const typedStrings = ref([
         :loop="true"
       />
     </div>
+
+    <div class="accordion">
+      <accordion></accordion>
+    </div>
   </div>
 </template>
 
@@ -95,7 +100,7 @@ const typedStrings = ref([
     }
 
     .typeText {
-      margin: 20px !important;
+      margin: 50px 0 30px 0 !important;
     }
   }
 }
@@ -201,12 +206,16 @@ const typedStrings = ref([
 
   .typeText {
     font-size: 24px;
-    margin: 50px;
+    margin: 50px 0 30px 0;
 
     z-index: 1;
-    display: flex;
-    height: 50px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
+  }
+
+  .accordion {
+    z-index: 1;
   }
 }
 </style>
