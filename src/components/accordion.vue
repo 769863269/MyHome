@@ -48,6 +48,7 @@
     height: 100px !important;
     border-radius: 100px !important;
     margin: 0 10px !important;
+    box-shadow: 4px 12px 9px rgba(0, 0, 0, 0.07) !important;
   }
   .warpper .buttons:hover {
     width: 300px !important;
@@ -68,14 +69,14 @@
 }
 
 .warpper .buttons {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  margin: 0 8px;
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
+  margin: 0 3px;
   overflow: hidden;
   background: #fff;
   cursor: pointer;
-  box-shadow: 4px 12px 9px rgba(0, 0, 0, 0.07);
+  box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.07);
   transition: all 0.3s;
 }
 
@@ -87,9 +88,9 @@
 }
 
 .warpper .buttons .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
   text-align: center;
   display: flex;
   justify-content: center;
