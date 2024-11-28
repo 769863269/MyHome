@@ -44,23 +44,23 @@
 <style lang="scss" scoped>
 @media screen and (min-width: 930px) {
   .warpper .buttons {
-    width: 100px !important;
-    height: 100px !important;
-    border-radius: 100px !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 60px !important;
     margin: 0 10px !important;
     box-shadow: 4px 12px 9px rgba(0, 0, 0, 0.07) !important;
   }
   .warpper .buttons:hover {
-    width: 300px !important;
+    width: 280px !important;
   }
   .warpper .buttons .icon {
-    width: 100px !important;
-    height: 100px !important;
-    border-radius: 100px !important;
-    font-size: 50px !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 60px !important;
+    font-size: 38px !important;
   }
   .warpper .buttons span {
-    font-size: 36px !important;
+    font-size: 32px !important;
   }
 }
 

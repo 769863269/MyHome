@@ -85,21 +85,22 @@ const typedStrings = ref([
     background-position: -20em !important;
 
     .info {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column !important;
+      align-items: center !important;
 
       .infoText {
         align-items: center !important;
-        font-size: 1em !important;
+        font-size: 1.2em !important;
         margin: 0 !important;
       }
 
       .header {
-        margin: 0 0 1em 0;
+        margin: 0 0 1em 0 !important;
       }
     }
 
     .typeText {
+      font-size: 24px !important;
       margin: 50px 0 30px 0 !important;
     }
   }
@@ -165,6 +166,7 @@ const typedStrings = ref([
       align-items: start;
       flex-direction: column;
       margin-left: 30px;
+      font-size: 1.5rem;
 
       .nameText {
         position: relative;
@@ -205,12 +207,12 @@ const typedStrings = ref([
   }
 
   .typeText {
-    font-size: 24px;
+    font-size: 30px;
     margin: 50px 0 30px 0;
 
     z-index: 1;
-    height: 30px;
-    line-height: 30px;
+    height: 42px;
+    line-height: 42px;
     text-align: center;
   }
 
